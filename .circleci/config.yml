@@ -55,6 +55,10 @@ jobs:
       - run:
           name: "run jest"
           command: "npm run test:ci"
+      - store_test_results:
+          path: ./reports
+      - store_artifacts:
+          path: ./coverage
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows

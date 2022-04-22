@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci --coverage"
   },
   "dependencies": {
     "next": "latest",
@@ -23,6 +23,7 @@
     "eslint-config-next": "latest",
     "eslint-plugin-testing-library": "5.0.1",
     "jest": "27.4.5",
+    "jest-junit": "^13.2.0",
     "typescript": "4.5.4"
   }
 }
