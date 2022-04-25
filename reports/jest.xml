@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="2" failures="1" errors="0" time="1.676">
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2022-04-22T00:23:14" time="0.812" tests="1">
+    <testcase classname=" renders homepage unchanged" name=" renders homepage unchanged" time="0.047">
+      <failure>Error: expect(received).toMatchSnapshot()
+
+Snapshot name: `renders homepage unchanged 1`
+
+- Snapshot  - 4
++ Received  + 4
+
+@@ -4,21 +4,21 @@
+    &gt;
+      &lt;main&gt;
+        &lt;h1
+          class=&quot;title&quot;
+        &gt;
+-         Welcome to
++         Welcome to 
+          &lt;a
+            href=&quot;https://nextjs.org&quot;
+          &gt;
+            Next.js!
+          &lt;/a&gt;
+        &lt;/h1&gt;
+        &lt;p
+          class=&quot;description&quot;
+        &gt;
+-         Get started by editing
++         Get started by editing 
+          &lt;code&gt;
+            pages/index.js
+          &lt;/code&gt;
+        &lt;/p&gt;
+        &lt;div
+@@ -77,11 +77,11 @@
+          href=&quot;https://vercel.com?utm_source=create-next-app&amp;utm_medium=default-template&amp;utm_campaign=create-next-app&quot;
+          rel=&quot;noopener noreferrer&quot;
+          target=&quot;_blank&quot;
+        &gt;
+          Powered by
+-
++          
+          &lt;span
+            class=&quot;logo&quot;
+          &gt;
+            &lt;span
+              style=&quot;box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;&quot;
+@@ -90,11 +90,11 @@
+                style=&quot;box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;&quot;
+              &gt;
+                &lt;img
+                  alt=&quot;&quot;
+                  aria-hidden=&quot;true&quot;
+-                 src=&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzIiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+&quot;
++                 src=&quot;data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2772%27%20height=%2716%27/%3e&quot;
+                  style=&quot;display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;&quot;
+                /&gt;
+              &lt;/span&gt;
+              &lt;img
+                alt=&quot;Vercel Logo&quot;
+    at Object.&lt;anonymous&gt; (/Users/shiki/programming/nextjs-circleci/__tests__/snapshot.tsx:6:21)
+    at Promise.then.completed (/Users/shiki/programming/nextjs-circleci/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/shiki/programming/nextjs-circleci/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/shiki/programming/nextjs-circleci/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/shiki/programming/nextjs-circleci/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/shiki/programming/nextjs-circleci/node_modules/jest-circus/build/run.js:66:9)
+    at run (/Users/shiki/programming/nextjs-circleci/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/shiki/programming/nextjs-circleci/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/shiki/programming/nextjs-circleci/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/shiki/programming/nextjs-circleci/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/shiki/programming/nextjs-circleci/node_modules/jest-runner/build/runTest.js:475:34)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Home" errors="0" failures="0" skipped="0" timestamp="2022-04-22T00:23:15" time="0.251" tests="1">
+    <testcase classname="Home renders a heading" name="Home renders a heading" time="0.077">
+    </testcase>
+  </testsuite>
+</testsuites>
