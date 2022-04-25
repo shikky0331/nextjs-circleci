@@ -60,6 +60,17 @@ jobs:
       - store_artifacts:
           path: ./coverage
 
+  build:
+    docker:
+      - image: cimg/node:18.0.0
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: "build with Next.js"
+          command: npm run build
+
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
@@ -70,5 +81,8 @@ workflows:
           requires:
             - install-deps
       - jest:
+          requires:
+            - install-deps
+      - build:
           requires:
             - install-deps
